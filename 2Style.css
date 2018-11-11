@@ -1,0 +1,138 @@
+
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-image: url("toothbac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment:fixed;*/
+  }
+  .header {
+  
+    background-color: rgba(255,255,255,0);
+    padding: 75px;
+  
+    text-align: center;
+  }
+  h1{
+      text-align: center;
+  }
+  
+  
+  .sliderul{
+    width:80%;
+    display:inline-block;
+    list-style-type:none;
+    margin:0px;
+    text-align:center;
+    margin-top:45px;
+    padding:0px;
+  
+  }
+  .slideshow-container{
+    width:60%;
+    height:100px;
+    margin:0px auto;
+    text-align: center;
+  
+  }
+  .spot{
+    width: 20px;
+    height:20px;
+    margin-top: 45px;
+  
+  
+    border-radius:100%;
+    background-color: gray;
+    display:inline-block;
+    cursor:pointer;
+  }
+  .spot:hover{
+    background-color: black;
+  }
+  .spot.prev{
+    float:left;
+  }
+  .spot.next{
+    float:right;
+  }
+  /*導航欄——————————————————————————————————————————————————*/
+  #nav{
+    
+    overflow:hidden;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: rgba(220, 247, 248);
+    
+  }
+  #nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top:15px;
+    width:25%;
+    height:40px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  #nav a:hover {
+    background-color:rgba(255,255,255,0.5);
+  }
+  
+  /*}  多了一個東西就不能運作了55555555*/
+  .sticky {
+    position: fixed;
+   
+    top: 0;
+    left:0;
+    right:0;
+    /*消除左右值*/
+    
+  }
+  
+  /*----------------------------------*/
+  .content{
+    font-family: Microsoft JhengHei, Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+   
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 25px;
+  }
+  @media(max-width: 800px){
+      /* margin設小一點，白色的背板才不會太小 */
+    .content {
+      margin: 20px 15px 20px 15px;
+    }
+    #nav{
+      
+      display: none;
+    }
+  
+    p{
+      font-size: 18px;
+    }
+  }
+  /*移至最頂---------------------------------*/
+  #gotop {
+    position: fixed;/*固定位置*/
+    /*width:10px;height:10px;正圓形，所以寬與高都設一樣*/
+    /*border-radius:999em;用來設定區塊四邊的圓角，把數值設到 999em 之後，會自動變成正圓*/
+    right: 20px;/*跟右邊距離20px*/
+    bottom: 30px;/*跟最底距離30px*/
+    cursor:pointer;/*鼠標到那邊會變成手*/
+    z-index: 1000;/*Z軸位置*/
+  }
+  /*跳章節---------------------------------*/
+  #menu {
+    position: fixed;
+    border-radius: 50px;
+    padding: 8px 35px;
+    right: 0;
+    top: 50%;/*上下各半，置中*/
+    width: 8em;
+    background: rgba(209, 248, 243, 0.36);
+  }

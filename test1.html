@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chiu's page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="1Style.css">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slideshow-content").hide();
+			$(".slideshow-content:nth-child(1)").fadeIn("show");
+			let current=1;
+			let max= $(".sliderul li").length;
+			startChange();
+
+			function prev(){
+				$(".slideshow-content").hide();
+				current-=1;
+				if(current==0){
+					current=max;
+
+				}
+				$(".slideshow-content:nth-child("+current+")").fadeIn("slow");
+
+			}
+			
+			function next(){
+				$(".slideshow-content").hide();
+				current+=1;
+				if(current>max){
+					current=1;
+				}
+				$(".slideshow-content:nth-child("+current+")").fadeIn("slow");
+
+			}
+			function startChange(){
+				changeIt=setInterval(function(){next();},4000);
+			}
+			function stopChange(){
+				clearInterval(changeIt);
+			}
+
+			$(".spot.prev").click(
+				function(){
+				stopChange();
+				prev();
+				startChange();
+				});
+			
+			
+			 $(".spot.next").click(function(){
+			        stopChange();
+			        next();
+			        startChange();
+			    });
+			
+		});
+    </script>
+</head>
+
+
+<body>
+<div class="content">
+		<h1>于瓔的個人網頁</h1>
+
+		<div class="slideshow-container">
+     	<div class="spot prev"></div>
+		    <ul class="sliderul">
+                <li class="slideshow-content"><span>如果你覺得每天都想睡覺</span></li>
+                <li class="slideshow-content"><span>那是非常正常的</span></li>
+                <li class="slideshow-content"><span>你想想看</span></li>
+                <li class="slideshow-content"><span>春眠不覺曉</span></li>
+                <li class="slideshow-content"><span>夏日炎炎正好眠</span></li>
+                <li class="slideshow-content"><span>秋高氣爽最貪眠</span></li>
+                <li class="slideshow-content"><span>冬天怎能不冬眠</span></li>
+				<li class="slideshow-content"><span>所以說，無時無刻都想睡覺，真的不是我們的錯啊</span></li>
+		    </ul>
+    	<div class="spot next"></div>
+	</div>	
+		<a name="one"></a>
+		<h2 id="mySelfie">我的大頭貼</h2>
+		<img src="https://cdn2.ettoday.net/images/771/d771489.jpg" style="width:300px;">
+		<a name="two"></a>
+		<h2 id="whoIsI">我是誰?</h2>
+		<p>
+		名字: 邱于瓔<br>
+		系級: 圖資三<br>
+		就讀學校: <a href="http://www.fju.edu.tw/">輔仁大學</a>
+		</p>
+		<a name="three"></a>
+		<h2 id="mySkill">我的專長</a></h2>
+		<ol>
+			<li>睡覺</li>
+			<li>發呆</li>
+			<li>神遊</li>
+		</ol>
+		<a name="four"></a>
+		<h2 id="myHabbit">我的興趣</a></h2>
+		<ul>
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+            <li>吃好吃的東西</li>
+            <li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>  
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li> 
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>
+			<li>睡覺</li>
+			<li>閱讀</li>
+			<li>吃好吃的東西</li>        
+		</ul>
+	</div>
+	<div id="gotop">˄</div>
+	<script>
+		$("#gotop").click(function(){
+    		jQuery("html,body").animate({
+        		scrollTop:0
+    		},1000);//用動畫式的方式慢慢移動到最上面
+		});
+		$(window).scroll(function() {
+    		if ( $(this).scrollTop() > 300){//$(this).scrollTop()取得目前的位置距離網頁頂端有多遠
+        		$('#gotop').fadeIn("fast");
+    		} else {
+        		$('#gotop').stop().fadeOut("fast");
+    		}
+		});
+	</script>
+	<div>
+		<ul id=menu>
+			<li><a href="#one">我的大頭貼</a>
+			<li><a href="#two">我是誰?</a>
+			<li><a href="#three">我的專長</a>
+			<li><a href="#four">我的興趣</a>	
+		</ul>
+	</div>
+
+	<!--<div>
+		<audio controls>
+			<source src="1.mp3" type="audio/mpeg">
+		</audio>
+	</div>-->
+	<embed src="1.mp3" autostart="true" hidden="true" loop="true" volume="100">
+	<!--width="200" height=45-->
+		
+</body>
+</html>
